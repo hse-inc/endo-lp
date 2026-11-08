@@ -1,0 +1,83 @@
+:root {
+  
+  --color-ink: #2b2622;          
+  --color-main: #a84a00;         
+  --color-main-3: #155e56;       
+  --color-main-2: #1f7a70;       
+  --color-accent: #c25200;       
+  --color-accent-2: #b84d00;     
+  --color-orange: #fb8500;       
+  --color-amber: #ffb703;        
+  --color-sun: #ffd168;          
+  --color-emerald: #2a9d8f;      
+  --color-tag-1: #c95500;        
+  --color-tag-2: #1f7d72;        
+  --color-base: #fbf6ec;         
+  --color-white: #ffffff;        
+  --color-pale: #fff1d2;         
+  --color-line: #e3d6c0;         
+  --color-on-dark: #ffffff;      
+  --color-on-dark-line: rgb(255 255 255 / 0.85);
+  --color-error: #c8312b;        
+  --color-shadow: rgb(120 70 10 / 0.16);
+  --color-sun-soft: rgb(255 209 104 / 0.55);   
+  --color-grad-1: #e06800;       
+  --color-grad-2: #2a9d8f;       
+  
+  --g1: #cf5800;
+  --g2: #bb6700;
+  --g3: #a27400;
+  --g4: #867f00;
+  --g5: #678721;
+  --g6: #448a48;
+  --g7: #228d66;
+  --g8: #078c7f;
+  --color-sheen: rgb(255 255 255 / 0.85);       
+  --color-marker: rgb(255 209 104 / 0.75);      
+  --color-emerald-soft: rgb(42 157 143 / 0.18);
+
+  
+  --bg-dark: linear-gradient(160deg, var(--color-orange) 0%, var(--color-accent-2) 100%);
+  --bg-accent: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+
+  
+  --font-body: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
+  --font-head: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
+  --font-en: "Lexend Zetta", "Zen Maru Gothic", sans-serif;
+  --fs-min: 13px;
+  --fs-base: clamp(var(--fs-min), min(2.4dvh, 4.1vw), 16px);
+  --fs-ui: max(var(--fs-min), 13px);
+  --fs-input: 16px;
+  --fs-head: 1.5em;              
+  --fs-tate: clamp(20px, 3.4dvh, 32px);   
+  --fw-body: 500;                
+  --ls-body: 0.04em;
+  --lh-body: 2.05;               
+  --lh-head: 1.6;
+  --ls-head: 0.08em;
+
+  
+  --col: 480px;
+  --header-h: 56px;
+  --gutter: 26px;
+  --sp-1: 0.5em;
+  --sp-p: 0.9em;
+  --sp-g: clamp(1.2em, 3.2dvh, 2.8em);
+  --pad-y: 1.2em;
+  --next-h: 0px;
+  --radius-pill: 999px;
+  --radius-s: 8px;
+  --radius-photo: 24px;
+  --shadow-soft: 0 6px 18px 0 var(--color-shadow);
+  --shadow-column: 0 0 24px 0 var(--color-shadow);
+
+  
+  --ease-out: cubic-bezier(0.39, 0.575, 0.565, 1);
+  --rise: 0px;
+  --blur-in: 6px;
+  --dur-in: 800ms;
+  --dur-hover: 400ms;
+  --dur-draw: 1400ms;            
+}
+@media (max-height: 600px) { :root { --pad-y: 0.7em; --sp-g: 1.1em; --lh-body: 1.85; } }
+@media (max-height: 700px) { :root { --sp-g: 1.05em; --sp-p: 0.6em; --lh-body: 1.85; } }
