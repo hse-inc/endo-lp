@@ -1,6 +1,6 @@
 .body { text-align: start; word-break: keep-all; overflow-wrap: anywhere; }
 .txt { display: grid; gap: var(--sp-p); }
-.txt > *, .window > *, .head > * { min-width: 0; }   
+.txt > *, .window > * { min-width: 0; }   
 .txt--center .body { text-align: center; }
 
 .page .rv.is-on { animation: blur-in var(--dur-in) var(--ease-out) both; }
