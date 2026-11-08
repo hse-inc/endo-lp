@@ -1,5 +1,6 @@
 .body { text-align: start; word-break: keep-all; overflow-wrap: anywhere; }
 .txt { display: grid; gap: var(--sp-p); }
+.txt > *, .window > *, .head > * { min-width: 0; }   
 .txt--center .body { text-align: center; }
 
 .page .rv.is-on { animation: blur-in var(--dur-in) var(--ease-out) both; }
@@ -86,7 +87,7 @@
   line-height: 1; letter-spacing: 0.14em; color: var(--color-on-dark);
 }
 .kv__tag {
-  display: block; writing-mode: vertical-rl; padding: 0.55em 0.5em calc(0.55em - 0.14em);
+  display: block; writing-mode: vertical-rl; padding: 0.55em 0.5em calc(0.42em - 0.14em);
   -webkit-mask: url("assets/mask-tag.png") center / 100% 100% no-repeat; mask: url("assets/mask-tag.png") center / 100% 100% no-repeat;
   animation: tag-drop 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
@@ -125,8 +126,9 @@
 }
 
 .head { display: grid; gap: var(--sp-1); }
+.ttl-h.ttl-h--one { white-space: nowrap; font-size: min(var(--fs-head), 5.2vw); letter-spacing: 0; }
 .ttl-h { font-family: var(--font-head); font-weight: 700; font-size: min(var(--fs-head), 5.8vw); line-height: var(--lh-head); letter-spacing: 0.04em; color: var(--color-ink); word-break: keep-all; overflow-wrap: anywhere; }
-.sub { font-weight: 700; font-size: max(var(--fs-min), 1.04em); line-height: 1.6; color: var(--color-main); word-break: keep-all; overflow-wrap: anywhere; }
+.sub { font-weight: 700; font-size: max(var(--fs-min), 1em); line-height: 1.6; color: var(--color-main); word-break: keep-all; overflow-wrap: anywhere; }
 .sup { font-size: max(var(--fs-min), 0.85em); }
 .note { display: inline-block; font-size: max(var(--fs-min), 0.9em); line-height: 1.8; }
 .btn__ar { display: inline-grid; place-items: center; width: 30px; height: 30px; margin-left: 0.8em; border-radius: 50%; background: var(--color-white); color: var(--color-accent); }
